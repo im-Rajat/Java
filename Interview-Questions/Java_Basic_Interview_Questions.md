@@ -19,8 +19,8 @@ Java isn't considered a "pure" object-oriented language because it supports **pr
 ### Q) What is the difference between Heap and Stack Memory in Java?
 
   - **Stack Memory**: This is a region of memory assigned to each thread when it's created. It's used for static memory allocation and stores primitive variables and references to objects. Memory is managed in a Last-In-First-Out (LIFO) order and is fixed in size.
-  - **Heap Memory**: This is a larger memory pool shared among all threads in a Java application. It's used for dynamic memory allocation, where all objects and JRE classes are stored.
-    <img src="images/memory.jpg" alt="memory" width="500">
+  - **Heap Memory**: This is a larger memory pool shared among all threads in a Java application. It's used for dynamic memory allocation, where all objects and JRE classes are stored.  
+    <img src="images/memory.jpg" alt="memory" width="800">
 
 **How Java Utilizes This Memory:**
 
