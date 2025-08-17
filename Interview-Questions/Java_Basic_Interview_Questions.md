@@ -20,7 +20,7 @@ Java isn't considered a "pure" object-oriented language because it supports **pr
 
   - **Stack Memory**: This is a region of memory assigned to each thread when it's created. It's used for static memory allocation and stores primitive variables and references to objects. Memory is managed in a Last-In-First-Out (LIFO) order and is fixed in size.
   - **Heap Memory**: This is a larger memory pool shared among all threads in a Java application. It's used for dynamic memory allocation, where all objects and JRE classes are stored.  
-    <img src="images/memory.jpg" alt="memory" width="800">
+    <img src="images/memory.jpg" alt="memory" width="600">
 
 **How Java Utilizes This Memory:**
 
@@ -37,28 +37,21 @@ No, as mentioned before, Java is not a pure OOP language because it allows the d
   - **Pointers**: C++ allows direct memory manipulation through pointers. Java does not allow explicit pointers, which enhances security and simplicity. Java uses pointers internally, but they are not accessible to the programmer.
   - **Multiple Inheritance**: C++ supports multiple inheritance, where a class can inherit from more than one parent class. Java does not support multiple inheritance for classes to avoid the "Diamond Problem" (ambiguity that can arise from it), but it achieves a similar result using interfaces.
 
------
-
 ### Q) Pointers are used in C/C++. Why does Java not use pointers?
 
   - **Simplicity**: Pointers can be complex and are a common source of errors, especially for beginners. Java's design prioritizes code simplicity and readability.
   - **Security**: Pointers allow direct access to memory locations, which can be a significant security risk. By abstracting away pointers, Java provides a more secure environment and prevents unauthorized memory access.
 
------
-
 ### Q) What do you understand by an instance variable and a local variable?
 
   - **Instance Variables**: These are variables declared inside a class but outside any method, constructor, or block. They belong to an instance of the class (an object) and are accessible by all methods within that class.
-  - **Local Variables**: These are variables declared inside a method, constructor, or block. Their scope is limited to that specific block, and they can only be accessed within it.
-
------
+  - **Local Variables**: These are variables declared inside a method, constructor, or block. Their scope is limited to that specific block, and they can only be accessed within it.  
+  <img src="images/variables.jpg" alt="variables" width="600">
 
 ### Q) What are the default values assigned to variables and instances in Java?
 
   - **Local Variables**: There are **no default values** assigned to local variables. You must initialize them before use, or you will get a compilation error.
   - **Instance Variables**: When an object is created, its instance variables are automatically initialized with default values by the constructor if they are not explicitly assigned a value. The default value depends on the data type.
-
------
 
 ### Q) What do you mean by data encapsulation?
 
