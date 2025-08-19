@@ -57,9 +57,8 @@ No, as mentioned before, Java is not a pure OOP language because it allows the d
 
   - Data Encapsulation is an OOP concept where you bundle the data (attributes) and the methods (behaviors) that operate on the data into a single unit, called a class.
   - It promotes **modularity**, as each object is a self-contained unit.
-  - It is a key mechanism for achieving **data hiding**, where the internal state of an object is protected from outside access. This is typically done by making variables `private` and providing `public` getter and setter methods to access them.
-
------
+  - It is a key mechanism for achieving **data hiding**, where the internal state of an object is protected from outside access. This is typically done by making variables `private` and providing `public` getter and setter methods to access them.  
+  <img src="images/encapsulation.jpg" alt="encapsulation" width="600">
 
 ### Q) What is the difference between the `equals()` method and the equality operator (`==`) in Java?
 
@@ -74,30 +73,95 @@ The primary difference is that `==` is an operator used for reference comparison
 
 The default implementation of the `equals()` method in the `Object` class simply uses the `==` operator. However, classes like `String` and `Integer` override it to perform a content-based comparison.
 
------
-
 ### Q) Explain the concept of constructor overloading.
 
-Constructor overloading is the practice of having multiple constructors within a single class, each with a different parameter list. They all share the same name (the class name), but they must differ in the **number**, **type**, or **order** of their parameters. This allows you to create objects in different ways.
+Constructor overloading is the practice of having multiple constructors within a single class, each with a different parameter list. They all share the same name (the class name), but they must differ in the **number**, **type**, or **order** of their parameters. This allows you to create objects in different ways.  
 
------
+<img src="images/constructor_overloading.jpg" alt="constructor_overloading" width="600">
 
 ### Q) Define Copy Constructor in Java.
 
 A copy constructor is a special constructor that initializes a new object using the values from an existing object of the same class. It takes an object of the same class as an argument and copies the data from the passed-in object to the new object being created.
 
------
+```java
+class InterviewBit{
+    String department;
+    String service;
+    InterviewBit(InterviewBit ib){
+        this.departments = ib.departments;
+        this.services = ib.services;
+    }
+}
+```
 
 ### Q) Can the `main` method be overloaded?
 
 **Yes**, the `main` method can be overloaded just like any other method in Java. You can have multiple methods named `main` as long as their parameter lists are different. However, the JVM will only ever call the specific `main` method that has the signature `public static void main(String[] args)`.
 
------
+```java
+class Main {
+    public static void main(String args[]) {
+        System.out.println(" Main Method");
+    }
+
+    public static void main(int[] args) {
+        System.out.println("Overloaded Integer array Main Method");
+    }
+
+    public static void main(char[] args) {
+        System.out.println("Overloaded Character array Main Method");
+    }
+
+    public static int main(double[] args) {
+        System.out.println("Overloaded Double array Main Method");
+    }
+
+    public static void main(float args) {
+        System.out.println("Overloaded float Main Method");
+    }
+}
+```
 
 ### Q) What is the difference between method overloading and overriding?
 
   - **Method Overloading (Compile-time Polymorphism)**: This occurs when two or more methods within the **same class** have the same name but different parameters (in number, type, or order). It's a way to enhance program readability. The correct method to call is decided at compile time.
+    ```java
+    // Same method name but different parameters
+
+    class OverloadingHelp {
+        public int findarea(int l, int b) {
+            int var1;
+            var1 = l * b;
+            return var1;
+        }
+
+        public int findarea(int l, int b, int h) {
+            int var2;
+            var2 = l * b * h;
+            return var2;
+        }
+    }
+    ```
+
   - **Method Overriding (Run-time Polymorphism)**: This occurs when a subclass (child class) has a method with the **same name, parameters, and return type** as a method in its superclass (parent class). The version of the method that gets executed is determined at runtime based on the object type.
+    ```java
+    // Same method signature, same parameters, but present in classes that have parent-child relationship
+
+    class HumanBeing {
+        public int walk(int distance, int time) {
+            int speed = distance / time;
+            return speed;
+        }
+    }
+
+    class Athlete extends HumanBeing {
+        public int walk(int distance, int time) {
+            int speed = distance / time;
+            speed = speed * 2;
+            return speed;
+        }
+    }
+    ```
 
 | Method Overloading                               | Method Overriding                               |
 | ------------------------------------------------ | ----------------------------------------------- |
@@ -106,21 +170,27 @@ A copy constructor is a special constructor that initializes a new object using 
 | Return type can be different.                    | Return type must be the same or covariant.      |
 | An example of compile-time polymorphism.         | An example of run-time polymorphism.            |
 
------
-
 ### Q) Explain the use of the `final` keyword in a variable, method, and class.
 
   - **`final` variable**: When a variable is declared as `final`, its value cannot be modified once assigned. It effectively becomes a **constant**. If a `final` variable isn't initialized at declaration, it must be initialized in the constructor.
   - **`final` method**: A method declared as `final` **cannot be overridden** by any subclass. This is used to prevent its behavior from being changed.
   - **`final` class**: A class declared as `final` **cannot be inherited** or extended by any other class. For example, the `String` class in Java is `final`.
 
------
-
 ### Q) What is the `finalize()` method?
 
 The `finalize()` method is a protected method of the `java.lang.Object` class. The garbage collector calls this method on an object just before it is destroyed and its memory is reclaimed. It's used to perform cleanup activities, such as closing files or releasing system resources. However, its use is generally discouraged as there's no guarantee when or if it will be called.
 
------
+```java
+public static void main(String[] args) {
+    String example = new String("InterviewBit");
+    example = null;
+    System.gc(); // Garbage collector called
+}
+
+public void finalize() {
+    // Finalize called
+}
+```
 
 ### Q) Is it possible that the `finally` block will not be executed?
 
@@ -130,8 +200,6 @@ Yes, there are a few situations where a `finally` block might not be executed:
   - If a fatal, unrecoverable error occurs, like a `StackOverflowError` or an `OutOfMemoryError`, which causes the JVM to crash.
   - If the thread executing the code is killed or interrupted.
 
------
-
 ### Q) When can you use the `super` keyword?
 
 The `super` keyword is a reference variable used to refer to the immediate parent class object. You can use it in the following scenarios:
@@ -140,45 +208,70 @@ The `super` keyword is a reference variable used to refer to the immediate paren
   - To call the **default or parameterized constructor** of the parent class from the child class's constructor. This must be the first statement in the child constructor.
   - To call a **parent class method** from a child class, especially when the child class has overridden that method.
 
------
+```java
+public class Parent {
+    protected int num = 1;
+
+    Parent() {
+        System.out.println("Parent class default constructor.");
+    }
+
+    Parent(String x) {
+        System.out.println("Parent class parameterised constructor.");
+    }
+
+    public void foo() {
+        System.out.println("Parent class foo!");
+    }
+}
+
+public class Child extends Parent {
+    private int num = 2;
+
+    Child() {
+        System.out.println("Child class default Constructor");
+        super();           // to call default parent constructor
+        super("Call Parent"); // to call parameterised constructor.
+    }
+
+    void printNum() {
+        System.out.println(num);
+        System.out.println(super.num); // prints the value of num of parent class
+    }
+
+    @Override
+    public void foo() {
+        System.out.println("Parent class foo!");
+        super.foo(); // Calls foo method of Parent class inside the Overriden foo method of Child class.
+    }
+}
+```
 
 ### Q) Can static methods be overloaded?
 
 **Yes**, static methods can be overloaded just like instance methods. You can have multiple static methods with the same name in a class, as long as they have different parameter lists.
 
------
-
 ### Q) Why is the `main` method static in Java?
 
 The `main` method is declared `static` so that the JVM can call it **without creating an instance** of the class. Since the `main` method is the entry point of any Java application, an object of the class does not exist before it is run. `static` members belong to the class itself, not to any specific object, allowing the JVM to call `main` directly using the class name.
 
------
-
 ### Q) Can static methods be overridden?
 
 **No**, static methods cannot be overridden in the same way that instance methods can. While you can declare a static method with the same signature in a subclass, this is known as **method hiding**, not overriding. The method that gets called is determined at compile time based on the reference type, not at runtime based on the object type (which is the essence of overriding).
-
------
 
 ### Q) What is the difference between static methods, static variables, and static classes in Java?
 
   - **Static Variables and Methods**: These members belong to the **class itself**, not to any individual instance (object) of the class. They are loaded into memory when the class is loaded. You can access them directly using the class name (e.g., `Math.max()`).
   - **Static Class**: A class can only be declared as `static` if it is a **nested class** (a class within another class). A static nested class behaves like any other top-level class and can be instantiated without an instance of the outer class. It can only access static members of the outer class.
 
------
-
 ### Q) What is the main objective of garbage collection?
 
   - The primary goal of garbage collection is to **automatically manage memory** by freeing up space occupied by objects that are no longer in use by the program.
   - It deletes "unreachable" objects from the heap memory, helping to prevent memory leaks and ensuring more efficient use of memory.
 
------
-
 ### Q) What is a ClassLoader?
 
 A `ClassLoader` is a part of the Java Runtime Environment (JRE) responsible for dynamically loading Java classes into the JVM at runtime. When a program needs a class that hasn't been loaded yet (e.g., you create a `new Scanner()`), the ClassLoader finds the corresponding `.class` file and loads its bytecode into memory.
-
------
 
 ### Q) What is a Shallow Copy?
 
@@ -191,8 +284,6 @@ Rectangle obj2 = obj1; // obj2 now points to the same object as obj1
 ```
 
 This means both `obj1` and `obj2` point to the *same* object in memory. If you change the state of the object through `obj2`, the change will be reflected when you access it through `obj1`.
-
------
 
 ### Q) What is a Deep Copy?
 
@@ -207,3 +298,10 @@ obj3.breadth = obj1.breadth;
 ```
 
 This ensures that the original object and the copy are completely independent. Changes made to one will not affect the other. The `clone()` method, when properly implemented, can be used to perform a deep copy.
+
+<img src="images/shallow_deep_copy.jpg" alt="shallow_deep_copy" width="600">
+
+
+## References:
+
+- https://www.interviewbit.com/java-interview-questions/
