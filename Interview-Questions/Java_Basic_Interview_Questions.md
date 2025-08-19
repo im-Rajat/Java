@@ -77,7 +77,27 @@ The default implementation of the `equals()` method in the `Object` class simply
 
 Constructor overloading is the practice of having multiple constructors within a single class, each with a different parameter list. They all share the same name (the class name), but they must differ in the **number**, **type**, or **order** of their parameters. This allows you to create objects in different ways.  
 
-<img src="images/constructor_overloading.jpg" alt="constructor_overloading" width="600">
+```java
+// 3 constructors overloaded with different parameters
+
+class Hospital {
+    int variable1, variable2;
+    double variable3;
+
+    public Hospital(int doctors, int nurses) {
+        variable1 = doctors;
+        variable2 = nurses;
+    }
+
+    public Hospital(int doctors) {
+        variable1 = doctors;
+    }
+
+    public Hospital(double salaries) {
+        variable3 = salaries;
+    }
+}
+```
 
 ### Q) Define Copy Constructor in Java.
 
