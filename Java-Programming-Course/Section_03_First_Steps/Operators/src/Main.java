@@ -1,5 +1,3 @@
-package com.rj;
-
 import javax.swing.plaf.IconUIResource;
 
 public class Main {
