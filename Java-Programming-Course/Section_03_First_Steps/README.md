@@ -1,5 +1,6 @@
 # Section 3: First Steps
 
+
   * **JRE**: Java Runtime Environment enables Java code execution.
   * **JDK**: Java Development Kit is the software used to create and run/execute Java Programs.
   * **IDE**: Integrated Development Environment. Used to edit, build, run, and debug.
