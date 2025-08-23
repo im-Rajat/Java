@@ -7,96 +7,50 @@ https://www.udemy.com/course/java-the-complete-java-developer-course/
 
 ## Section 1: Course Introduction
 
-
 ## Section 2: Software Tools Setup
-
 
 ## Section 3: First Steps
 
-### Core Concepts
+## Section 4: Java Tutorial: Expressions, Statements, Code blocks, Methods and more
 
-  * **JRE (Java Runtime Environment)**: Enables Java code execution.
-  * **JDK (Java Development Kit)**: Software used to create and run/execute Java programs.
-  * **IDE (Integrated Development Environment)**: A tool to edit, build, run, and debug code.
+## Section 5: Control Flow Statements
 
-**Execution Flow:** `IDE` -\> `JDK` -\> (`Java App` -\> `JRE` -\> `Host Environment`)
+## Section 6: OOP Part 1 - Classes, Constructors and Inheritance
 
-Keywords in Java are **case-sensitive**.
+## Section 7: OOP Part 2 - Composition, Encapsulation, and Polymorphism
 
-```java
-public class Hello {
-}
-```
+## Section 8: Arrays, Java inbuilt Lists, Autoboxing and Unboxing
 
-> `public` and `class` are two Java keywords.
+## Section 9: Inner and Abstract Classes & Interfaces
 
------
+## Section 10: Java Generics
 
-### Methods and Literals
+## Section 11: Naming Conventions and Packages. static and final keywords
 
-  * **Method**: A collection of statements that performs an operation.
-  * **Main method**: The entry point of any Java code.
-  * **Literal String**: A sequence of characters, like `"Hello World"`.
+## Section 12: Java Collections
 
------
+## Section 13: JavaFX
 
-### Data Types
+## Section 14: Basic Input & Output including java.util
 
-#### Primitive Types
+## Section 15: Concurrency in Java
 
-There are 8 primitive types: `int`, `boolean`, `byte`, `char`, `short`, `long`, `float`, and `double`.
+## Section 16: Lambda Expressions
 
-#### Wrapper Classes
+## Section 17: Regular Expressions
 
-For primitive types, there are corresponding Wrapper classes. For example, the `int` primitive type has the `Integer` Wrapper class.
+## Section 18: Debugging and Unit Testing
 
-#### Size of Primitive Types
+## Section 19: Databases
 
-  * **Byte**: 8 bits
-  * **Short**: 16 bits
-  * **Int**: 32 bits
-  * **Char**: 16 bits (stores Unicode characters, representing 65,535 different characters)
-  * **Boolean**: In Java, this is `true` or `false`.
+## Section 20: Java Networking Programming
 
-> The `Integer` (`int`) is generally the best data type for whole numbers.
+## Section 21: Java 9 Module System
 
-#### Single and Double Precision
+## Section 22: Migrating Java Projects to Java 9
 
-  * **Float**: Single precision, 32 bits
-  * **Double**: Double precision, 64 bits
+## Section 23: Course Remaster in Progress
 
-#### Strings
+## Section 24: Archived Videos
 
-A **String** is a data type in Java, but it's not a primitive type; it's a **Class**. Strings in Java are **immutable**. If you add a string with an integer, Java will convert the integer to a string and create a new string.
-
------
-
-### Casting
-
-Casting means to treat or convert a number from one type to another.
-**Example**: `(byte) (myMinByteValue / 2)`
-
------
-
-### Operators
-
-  * **Operator**: Performs a specific operation (e.g., `+`, `-`, `*`, `/`).
-  * **Operand**: The object that is manipulated by an operator.
-  * **Expression**: A combination of operators and operands.
-
-#### Abbreviating Operators
-
-  * `a + 1` can be written as `a++`.
-  * `a = a + 2` can be written as `a += 2`.
-
-#### Logical Operators
-
-  * **Logical AND (`&&`)** and **Logical OR (`||`)** operate on boolean operands.
-
-#### Ternary Operator
-
-  * The ternary operator (`?:`) is a shortcut for an if-then-else statement.
-
-> **Operator Precedence** is an important concept to understand the order in which operations are performed.
-
-
+## Section 25: Extra Information - Source code, and other stuff
