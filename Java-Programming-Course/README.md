@@ -54,3 +54,8 @@ https://www.udemy.com/course/java-the-complete-java-developer-course/
 ## [Section 24: Archived Videos](./Section_24_Archived_Videos/README.md)
 
 ## [Section 25: Extra Information - Source code, and other stuff](./Section_25_Extra_Information_Source_code_and_other_stuff/README.md)
+
+
+
+## Course Notes
+  * [**Java Programming Course Notes (Combined)**](./Java%20Programing%20Course%20Notes%20(Combined).pdf) - All course notes compiled into a single PDF document.
