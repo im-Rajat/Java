@@ -1,5 +1,82 @@
 # [Java Programming Tutorial](https://www.youtube.com/playlist?list=PLsyeobzWxl7pFZoGT1NbZJpywedeyzyaf)
 
+## Table of Contents
+
+### Section 1: Basics & OOP Structure
+* [1. Basic Structure](#1-basic-structure)
+* [2. Naming Conventions](#2-naming-conventions)
+* [3. Constructor](#3-constructor)
+* [4. Static Keyword](#4-static-keyword)
+* [5. Inner Classes](#5-inner-classes)
+* [6. Static Inner Class](#6-static-inner-class)
+* [7. Summary: 3 Types of Inner Classes](#7-summary-3-types-of-inner-classes)
+
+### Section 2: Arrays & Inheritance
+* [8. Jagged Array](#8-jagged-array)
+* [9. Create an Array](#9-create-an-array)
+* [10. Enhanced For Loop](#10-enhanced-for-loop)
+* [11. Variable Arguments (Varargs)](#11-variable-arguments-varargs)
+* [12. Inheritance](#12-inheritance)
+* [13. Super Keyword](#13-super-keyword)
+
+### Section 3: OOP Principles
+* [14. Method Overriding](#14-method-overriding)
+* [15. Runtime Polymorphism & Dynamic Method Dispatch](#15-runtime-polymorphism--dynamic-method-dispatch)
+* [16. Encapsulation](#16-encapsulation)
+* [17. Wrapper Class | AutoBoxing](#17-wrapper-class--autoboxing)
+* [18. Abstract Keyword](#18-abstract-keyword)
+* [19. Final Keyword](#19-final-keyword)
+
+### Section 4: Interfaces
+* [20. Interface](#20-interface)
+* [21. Anonymous Inner Class](#21-anonymous-inner-class)
+* [22. Anonymous Class with Interface](#22-anonymous-class-with-interface)
+* [23. Types of Interface](#23-types-of-interface)
+* [24. Default Method in Interface](#24-default-method-in-interface)
+* [25. Static Method in Interface](#25-static-method-in-interface)
+
+### Section 5: Structure & Visibility
+* [26. Packages](#26-packages)
+* [27. Access Modifiers](#27-access-modifiers)
+
+### Section 6: Exceptions & Input
+* [28. Exception Handling](#28-exception-handling)
+* [29. Multiple Catch Blocks](#29-multiple-catch-blocks)
+* [30. User Input: BufferedReader](#30-user-input-bufferedreader)
+* [31. Checked Exceptions & Try with Resources](#31-checked-exceptions--try-with-resources)
+* [32. User Defined Exceptions](#32-user-defined-exceptions)
+* [33. User Input using Scanner](#33-user-input-using-scanner)
+
+### Section 7: Multithreading
+* [34. Multithreading](#34-multithreading)
+* [35. Thread Class](#35-thread-class)
+* [36. Runnable Interface](#36-runnable-interface)
+* [37. Using Lambda Expression](#37-using-lambda-expression)
+* [38. Join and isAlive Method](#38-join-and-isalive-method)
+* [39. Thread Name and Priority](#39-thread-name-and-priority)
+* [40. Synchronized Method](#40-synchronized-method)
+* [41. Thread Safety](#41-thread-safety)
+
+### Section 8: Collections Framework
+* [42. Collection and Generics](#42-collection-and-generics)
+* [43. Collection and Iterator Interface](#43-collection-and-iterator-interface)
+* [44. List Interface](#44-list-interface)
+* [45. Using Generic with List](#45-using-generic-with-list)
+* [46. Collections Class](#46-collections-class)
+* [47. Comparator Interface](#47-comparator-interface)
+* [48. Comparable Interface](#48-comparable-interface)
+* [49. Set Interface](#49-set-interface)
+* [50. Map Interface](#50-map-interface)
+
+### Section 9: Modern Java Features
+* [51. Var Keyword (Java 10 Feature)](#51-var-keyword-java-10-feature)
+* [52. Updated Switch Statement and Expression](#52-updated-switch-statement-and-expression)
+* [53. Record Classes (Java 17 Feature)](#53-record-classes-java-17-feature)
+* [54. Sealed Classes (Java 17 Feature)](#54-sealed-classes-java-17-feature)
+
+
+------
+
 
 ## Section 1:
 
