@@ -2,15 +2,11 @@
 
 This roadmap outlines the technologies and concepts for becoming a Java backend developer.
 
----
-
 ## General Roadmaps & References
 
 * [Backend Developer Roadmap](https://roadmap.sh/backend)
 * [Core Java LinkedIn Path](https://www.linkedin.com/learning/paths/nagarro-software-private-limited-java?u=2037868)
 * [Java Collections Frameworks](https://www.youtube.com/watch?v=VE_AAUxTUCY&ab_channel=RiddhiDutta)
-
----
 
 ## Technology Stack Roadmap 
 > [Twitter: Java Backend Development](https://twitter.com/vikasrajputin/status/1590923274451488768)
@@ -39,3 +35,17 @@ This roadmap outlines the technologies and concepts for becoming a Java backend 
     * [Learn Basic **Docker**](https://www.youtube.com/watch?v=p28piYY_wv8&ab_channel=Amigoscode)
     * [Learn Basic **Kubernetes**](https://www.youtube.com/watch?v=rTNR7vDQDD8&ab_channel=in28minutes-CloudMadeEasy)
     * [Deploy a Spring Boot App on Kubernetes](https://www.youtube.com/watch?v=EZolJ4lNiYc&ab_channel=TechnoTownTechie)
+
+---
+
+## DSA -> System Design -> Resume -> Java, DBMS
+
+- DSA: Coding Decoded, Algorithms Made Easy
+- Design Patterns:
+- C++, Modern C++
+- UML
+- OOPS
+  - [OOPS CheatSheet](https://whimsical.com/object-oriented-programming-cheatsheet-by-love-babbar-YbSgLatbWQ4R5paV7EgqFw)
+- Solid Design Principle
+- System Design:
+  - [System Design Youtube Playlist](https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&index=1&ab_channel=GauravSen)
